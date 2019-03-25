@@ -6,13 +6,11 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.tarea_labo3.utils.appConstants;
-
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Button btn1, btn2;
+    private Button btn1;
     EditText name, psswd, email, gender;
 
     @Override
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         psswd = findViewById(R.id.edit_psswd);
         email = findViewById(R.id.edit_mail);
         gender = findViewById(R.id.edit_gender);
-
 
         btn1.setOnClickListener(v->{
             Intent int1 = new Intent(MainActivity.this,Main2Activity.class);

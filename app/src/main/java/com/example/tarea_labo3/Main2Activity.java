@@ -45,9 +45,10 @@ public class Main2Activity extends AppCompatActivity {
             txt4 = gender2.getText().toString();
 
             cadena = txt1 + "\n" + txt2 + "\n" + txt3 + "\n"+ txt4;
-
+            //cree una cadena de texto para meterla en un eddittext del cual agarrare los datos previamente unidos llamados "cadena"
             invisible.setText(cadena);
             cadena2 = invisible.getText().toString();
+            //guardo en una cadena 2 el texto dentro del eddittext para luego hacerlo invisible sin perder la cadena de texto
             invisible.setVisibility(View.GONE);
         }
         shareB = findViewById(R.id.share_btn);
